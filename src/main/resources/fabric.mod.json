@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ottoextra_translateutils",
+  "version": "${version}",
+  "name": "OttoExtra TranslateUtils",
+  "description": "Addon fuer OttoExtra: automatische RP-Chat-Uebersetzung ueber eine LibreTranslate-kompatible API. Emotes und geschuetzte Textteile bleiben unveraendert.",
+  "authors": [
+    "Skyfuller1303"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Skyfuller1303/OttoExtra",
+    "sources": "https://github.com/Skyfuller1303/OttoExtra",
+    "issues": "https://github.com/Skyfuller1303/OttoExtra/issues"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.ottoextra.translateutils.TranslateUtilsClient"
+    ],
+    "ottoextra": [
+      "de.ottoextra.translateutils.TranslateUtilsAddon"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "ottoextra_translateutils.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*",
+    "ottoextra": ">=0.1.11"
+  }
+}

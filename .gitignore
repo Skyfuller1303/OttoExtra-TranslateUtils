@@ -1,0 +1,29 @@
+.gradle/
+build/
+out/
+run/
+.vscode/
+.idea/
+*.iml
+bin/
+
+# Minecraft/Fabric runtime
+logs/
+crash-reports/
+saves/
+/config/
+
+# Dist: Sources-JAR nicht versionieren
+dist/*-sources.jar
+
+# Secrets
+*.env
+secrets.*
+apikey*
+api-key*
+tokens.*
+
+# Logs
+*.log
+
+# libs/ottoextra-<version>.jar ist bewusst eingecheckt (Basis-Mod zum Kompilieren)

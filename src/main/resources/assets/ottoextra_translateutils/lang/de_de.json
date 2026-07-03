@@ -1,0 +1,36 @@
+{
+  "ottoextra_translateutils.module": "TranslateUtils",
+  "ottoextra_translateutils.module.desc": "Übersetzt RP-Chatnachrichten automatisch in eine Zielsprache. Emotes zwischen *...* und geschützte Textteile bleiben unverändert; das Original kann in Klammern mitgesendet werden.",
+
+  "ottoextra_translateutils.card.main": "Übersetzung",
+  "ottoextra_translateutils.card.main.desc": "Sprachpaar und Anzeige im Chat. Der Hotkey zum schnellen Umschalten wird in Optionen → Steuerung → Tastenbelegung zugewiesen.",
+  "ottoextra_translateutils.opt.enabled": "Übersetzung aktivieren",
+  "ottoextra_translateutils.opt.sourceLanguage": "Eingabesprache",
+  "ottoextra_translateutils.opt.targetLanguage": "Zielsprache",
+  "ottoextra_translateutils.opt.showLanguageTag": "Sprachkürzel im Chat anzeigen",
+  "ottoextra_translateutils.opt.showLanguageTag.tip": "Stellt der Nachricht z. B. [DE>SV] voran.",
+  "ottoextra_translateutils.opt.showOriginal": "Originalnachricht anhängen",
+  "ottoextra_translateutils.opt.showOriginal.tip": "Hängt das Original in Klammern an, solange die 256-Zeichen-Grenze des Chats das zulässt.",
+  "ottoextra_translateutils.opt.feedback": "Statusmeldung beim Umschalten",
+
+  "ottoextra_translateutils.card.protect": "Geschützte Inhalte",
+  "ottoextra_translateutils.card.protect.desc": "Diese Textteile werden vor der Übersetzung maskiert und danach unverändert wiederhergestellt.",
+  "ottoextra_translateutils.opt.protectEmotes": "Emotes *...* schützen",
+  "ottoextra_translateutils.opt.protectEmotes.tip": "Text zwischen Sternchen bleibt in der Originalsprache.",
+  "ottoextra_translateutils.opt.protectColors": "Minecraft-Farbcodes schützen",
+  "ottoextra_translateutils.opt.protectUrls": "URLs schützen",
+  "ottoextra_translateutils.opt.protectTags": "Eckige Tags schützen",
+  "ottoextra_translateutils.opt.protectTags.tip": "Kurze Tags wie [OOC] oder [RP] werden nicht übersetzt.",
+
+  "ottoextra_translateutils.card.api": "Übersetzungs-API",
+  "ottoextra_translateutils.card.api.desc": "LibreTranslate-kompatibler Endpunkt. Bei Fehlern oder Timeout wird immer die Originalnachricht gesendet.",
+  "ottoextra_translateutils.opt.apiUrl": "API-URL",
+  "ottoextra_translateutils.opt.apiKey": "API-Key",
+  "ottoextra_translateutils.opt.apiKey.tip": "Optional — nur für geschützte Übersetzungsserver.",
+  "ottoextra_translateutils.opt.maxCharacters": "Maximale Zeichen",
+  "ottoextra_translateutils.opt.timeoutMillis": "Timeout (ms)",
+
+  "key.ottoextra_translateutils.toggle": "Übersetzung umschalten",
+  "ottoextra_translateutils.toggle.on": "[OttoExtra] Übersetzung aktiviert: %s -> %s",
+  "ottoextra_translateutils.toggle.off": "[OttoExtra] Übersetzung deaktiviert."
+}

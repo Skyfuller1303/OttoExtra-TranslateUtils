@@ -1,0 +1,83 @@
+plugins {
+    id 'fabric-loom' version "${loom_version}"
+    id 'java'
+}
+
+version = project.mod_version
+group = project.maven_group
+base { archivesName = 'OttoExtra-TranslateUtils' }
+
+// Client-only Addon fuer OttoExtra: eigenes JAR, laedt nur mit installierter
+// Basis-Mod (depends: ottoextra in der fabric.mod.json).
+loom {
+    mods {
+        "ottoextra_translateutils" {
+            sourceSet sourceSets.main
+        }
+    }
+
+    runs {
+        client {
+            vmArg "-Xmx6G"
+            // DevAuth aktivieren (Microsoft-Login; Token-Cache in ~/.devauth)
+            vmArg "-Ddevauth.enabled=true"
+            vmArg "-Ddevauth.account=main"
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { // DevAuth (Microsoft-Login im Dev-Client)
+        name = 'DevAuth'
+        url = 'https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1'
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings "net.fabricmc:yarn:${yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+
+    // Basis-Mod OttoExtra: eingecheckte JAR (Loom remappt nach Yarn).
+    // Bei neuer OttoExtra-Version: JAR in libs/ tauschen + ottoextra_version anpassen.
+    modImplementation files("libs/ottoextra-${ottoextra_version}.jar")
+
+    // Nur Dev-Runtime: echter Microsoft-Login fuer runClient. Landet NICHT im JAR.
+    modLocalRuntime "me.djtheredstoner:DevAuth-fabric:1.2.1"
+    localRuntime "org.apache.httpcomponents:httpclient:4.5.14"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+// Sammelt die fertig remappten Build-Artefakte in ./dist (gut sichtbar fuer Releases).
+tasks.register('dist', Copy) {
+    group = 'build'
+    description = 'Kopiert die gebauten JARs nach ./dist.'
+    dependsOn tasks.named('build')
+    from(tasks.named('remapJar'))
+    from(tasks.named('remapSourcesJar'))
+    into layout.projectDirectory.dir('dist')
+    doFirst {
+        delete fileTree(layout.projectDirectory.dir('dist')) { include '*.jar' }
+    }
+}
+
+tasks.named('build') { finalizedBy 'dist' }

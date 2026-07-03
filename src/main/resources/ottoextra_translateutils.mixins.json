@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.ottoextra.translateutils.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ChatSendMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ottoextra_translateutils.module": "TranslateUtils",
+  "ottoextra_translateutils.module.desc": "Automatically translates RP chat messages into a target language. Emotes between *...* and protected text parts stay untouched; the original can be appended in parentheses.",
+
+  "ottoextra_translateutils.card.main": "Translation",
+  "ottoextra_translateutils.card.main.desc": "Language pair and chat display. Assign the quick-toggle hotkey in Options → Controls → Key Binds.",
+  "ottoextra_translateutils.opt.enabled": "Enable translation",
+  "ottoextra_translateutils.opt.sourceLanguage": "Input language",
+  "ottoextra_translateutils.opt.targetLanguage": "Target language",
+  "ottoextra_translateutils.opt.showLanguageTag": "Show language tag in chat",
+  "ottoextra_translateutils.opt.showLanguageTag.tip": "Prefixes the message with e.g. [DE>SV].",
+  "ottoextra_translateutils.opt.showOriginal": "Append original message",
+  "ottoextra_translateutils.opt.showOriginal.tip": "Appends the original in parentheses as long as the 256-character chat limit allows it.",
+  "ottoextra_translateutils.opt.feedback": "Status message on toggle",
+
+  "ottoextra_translateutils.card.protect": "Protected content",
+  "ottoextra_translateutils.card.protect.desc": "These text parts are masked before translation and restored unchanged afterwards.",
+  "ottoextra_translateutils.opt.protectEmotes": "Protect emotes *...*",
+  "ottoextra_translateutils.opt.protectEmotes.tip": "Text between asterisks stays in the original language.",
+  "ottoextra_translateutils.opt.protectColors": "Protect Minecraft color codes",
+  "ottoextra_translateutils.opt.protectUrls": "Protect URLs",
+  "ottoextra_translateutils.opt.protectTags": "Protect bracket tags",
+  "ottoextra_translateutils.opt.protectTags.tip": "Short tags like [OOC] or [RP] are not translated.",
+
+  "ottoextra_translateutils.card.api": "Translation API",
+  "ottoextra_translateutils.card.api.desc": "LibreTranslate-compatible endpoint. On errors or timeout the original message is always sent.",
+  "ottoextra_translateutils.opt.apiUrl": "API URL",
+  "ottoextra_translateutils.opt.apiKey": "API key",
+  "ottoextra_translateutils.opt.apiKey.tip": "Optional — only for protected translation servers.",
+  "ottoextra_translateutils.opt.maxCharacters": "Max characters",
+  "ottoextra_translateutils.opt.timeoutMillis": "Timeout (ms)",
+
+  "key.ottoextra_translateutils.toggle": "Toggle translation",
+  "ottoextra_translateutils.toggle.on": "[OttoExtra] Translation enabled: %s -> %s",
+  "ottoextra_translateutils.toggle.off": "[OttoExtra] Translation disabled."
+}
