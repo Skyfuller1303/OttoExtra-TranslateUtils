@@ -1,16 +1,16 @@
 {
   "ottoextra_translateutils.module": "TranslateUtils",
-  "ottoextra_translateutils.module.desc": "Automatically translates RP chat messages into a target language. Emotes between *...* and protected text parts stay untouched; the original can be appended in parentheses.",
+  "ottoextra_translateutils.module.desc": "Automatically translates RP chat messages into a target language. Emotes between *...* and protected text parts stay untouched; the original optionally follows as its own ((OOC)) message.",
 
   "ottoextra_translateutils.card.main": "Translation",
   "ottoextra_translateutils.card.main.desc": "Language pair and chat display. Assign the quick-toggle hotkey in Options → Controls → Key Binds.",
   "ottoextra_translateutils.opt.enabled": "Enable translation",
   "ottoextra_translateutils.opt.sourceLanguage": "Input language",
   "ottoextra_translateutils.opt.targetLanguage": "Target language",
-  "ottoextra_translateutils.opt.showLanguageTag": "Show language tag in chat",
-  "ottoextra_translateutils.opt.showLanguageTag.tip": "Prefixes the message with e.g. [DE>SV].",
-  "ottoextra_translateutils.opt.showOriginal": "Append original message",
-  "ottoextra_translateutils.opt.showOriginal.tip": "Appends the original in parentheses as long as the 256-character chat limit allows it.",
+  "ottoextra_translateutils.opt.showLanguageTag": "Show language tag at chat input",
+  "ottoextra_translateutils.opt.showLanguageTag.tip": "Shows e.g. [DE>SV] at the right of the chat input line — green on RP channels, gray where translation does not apply. Never sent with the message.",
+  "ottoextra_translateutils.opt.showOriginal": "Send original as OOC message",
+  "ottoextra_translateutils.opt.showOriginal.tip": "Sends the original right after the translation as its own ((...)) message — the server only detects and colors OOC for whole messages.",
   "ottoextra_translateutils.opt.feedback": "Status message on toggle",
 
   "ottoextra_translateutils.card.protect": "Protected content",

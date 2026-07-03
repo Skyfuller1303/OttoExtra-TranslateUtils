@@ -1,16 +1,16 @@
 {
   "ottoextra_translateutils.module": "TranslateUtils",
-  "ottoextra_translateutils.module.desc": "Übersetzt RP-Chatnachrichten automatisch in eine Zielsprache. Emotes zwischen *...* und geschützte Textteile bleiben unverändert; das Original kann in Klammern mitgesendet werden.",
+  "ottoextra_translateutils.module.desc": "Übersetzt RP-Chatnachrichten automatisch in eine Zielsprache. Emotes zwischen *...* und geschützte Textteile bleiben unverändert; das Original folgt optional als eigene ((OOC))-Nachricht.",
 
   "ottoextra_translateutils.card.main": "Übersetzung",
   "ottoextra_translateutils.card.main.desc": "Sprachpaar und Anzeige im Chat. Der Hotkey zum schnellen Umschalten wird in Optionen → Steuerung → Tastenbelegung zugewiesen.",
   "ottoextra_translateutils.opt.enabled": "Übersetzung aktivieren",
   "ottoextra_translateutils.opt.sourceLanguage": "Eingabesprache",
   "ottoextra_translateutils.opt.targetLanguage": "Zielsprache",
-  "ottoextra_translateutils.opt.showLanguageTag": "Sprachkürzel im Chat anzeigen",
-  "ottoextra_translateutils.opt.showLanguageTag.tip": "Stellt der Nachricht z. B. [DE>SV] voran.",
-  "ottoextra_translateutils.opt.showOriginal": "Originalnachricht anhängen",
-  "ottoextra_translateutils.opt.showOriginal.tip": "Hängt das Original in Klammern an, solange die 256-Zeichen-Grenze des Chats das zulässt.",
+  "ottoextra_translateutils.opt.showLanguageTag": "Sprachkürzel an der Eingabe anzeigen",
+  "ottoextra_translateutils.opt.showLanguageTag.tip": "Zeigt z. B. [DE>SV] rechts an der Chat-Eingabezeile — grün auf RP-Kanälen, grau wenn die Übersetzung dort nicht greift. Wird nicht mitgesendet.",
+  "ottoextra_translateutils.opt.showOriginal": "Original als OOC-Nachricht senden",
+  "ottoextra_translateutils.opt.showOriginal.tip": "Sendet das Original direkt nach der Übersetzung als eigene ((...))-Nachricht — nur so erkennt und färbt der Server es als OOC.",
   "ottoextra_translateutils.opt.feedback": "Statusmeldung beim Umschalten",
 
   "ottoextra_translateutils.card.protect": "Geschützte Inhalte",

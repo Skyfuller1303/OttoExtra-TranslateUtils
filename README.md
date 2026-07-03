@@ -13,7 +13,11 @@ Textteile zu verändern.
   (Sprachpaar, Anzeige, geschützte Inhalte, API)
 - Sprachpaare: de/en/da/sv/pl/fr/es (LibreTranslate-Kürzel)
 - Hotkey zum schnellen Ein-/Ausschalten (Optionen → Steuerung, Standard unbelegt)
-- Chat-Ausgabe: `[DE>SV] übersetzte Nachricht (Originalnachricht)`
+- Aktives Sprachpaar (`[DE>SV]`) wird rechts an der Chat-Eingabezeile angezeigt
+  (grün = Übersetzung greift, grau = nicht auf diesem Kanal); nicht mitgesendet
+- Chat-Ausgabe: übersetzte Nachricht, direkt gefolgt vom Original als eigene
+  `((Originalnachricht))`-Nachricht (der Server erkennt OOC nur als ganze
+  Nachricht); `((...))`-Passagen in der Eingabe werden nie mitübersetzt
 - Emotes `*...*`, Minecraft-Farbcodes, URLs und `[Tags]` werden vor der
   Übersetzung per Platzhalter (`XKEEP0X`) maskiert und unverändert wiederhergestellt
 - Übersetzung läuft asynchron; bei API-Fehler oder Timeout wird immer die

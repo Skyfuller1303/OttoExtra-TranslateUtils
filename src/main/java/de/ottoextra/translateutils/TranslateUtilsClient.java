@@ -35,6 +35,8 @@ public final class TranslateUtilsClient implements ClientModInitializer {
             }
         });
 
+        TranslateIndicator.register();
+
         TranslateUtils.LOGGER.info("{} bereit (Addon fuer OttoExtra).", TranslateUtils.MOD_NAME);
     }
 
