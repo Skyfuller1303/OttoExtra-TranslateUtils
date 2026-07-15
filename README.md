@@ -5,7 +5,7 @@ automatische Übersetzung von RP-Chatnachrichten über eine
 LibreTranslate-kompatible API — ohne Emotes, Farbcodes oder geschützte
 Textteile zu verändern.
 
-**Minecraft 1.21.11 · Fabric · Client-only · benötigt OttoExtra ≥ 0.1.11**
+**Minecraft 1.21.11 · Fabric · Client-only · benötigt OttoExtra ≥ 0.1.13.2-a**
 
 ## Funktionen
 
@@ -13,8 +13,9 @@ Textteile zu verändern.
   (Sprachpaar, Anzeige, geschützte Inhalte, API)
 - Sprachpaare: de/en/da/sv/pl/fr/es (LibreTranslate-Kürzel)
 - Hotkey zum schnellen Ein-/Ausschalten (Optionen → Steuerung, Standard unbelegt)
-- Aktives Sprachpaar (`[DE>SV]`) wird rechts an der Chat-Eingabezeile angezeigt
-  (grün = Übersetzung greift, grau = nicht auf diesem Kanal); nicht mitgesendet
+- Das Sprachpaar (`[DE>SV]`) wird rechts neben der Chat-Eingabe angezeigt und
+  kann zum Ein-/Ausschalten angeklickt werden (grün = aktiv, grau = auf diesem
+  Kanal inaktiv, rot = ausgeschaltet); das Chatfeld hält den Platz frei
 - Chat-Ausgabe: übersetzte Nachricht, direkt gefolgt vom Original als eigene
   `((Originalnachricht))`-Nachricht (der Server erkennt OOC nur als ganze
   Nachricht); `((...))`-Passagen in der Eingabe werden nie mitübersetzt

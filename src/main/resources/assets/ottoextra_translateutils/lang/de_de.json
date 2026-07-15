@@ -8,7 +8,7 @@
   "ottoextra_translateutils.opt.sourceLanguage": "Eingabesprache",
   "ottoextra_translateutils.opt.targetLanguage": "Zielsprache",
   "ottoextra_translateutils.opt.showLanguageTag": "Sprachkürzel an der Eingabe anzeigen",
-  "ottoextra_translateutils.opt.showLanguageTag.tip": "Zeigt z. B. [DE>SV] rechts an der Chat-Eingabezeile — grün auf RP-Kanälen, grau wenn die Übersetzung dort nicht greift. Wird nicht mitgesendet.",
+  "ottoextra_translateutils.opt.showLanguageTag.tip": "Zeigt z. B. [DE>SV] rechts an der Chat-Eingabezeile — grün wenn aktiv, grau auf OOC-Kanälen und rot wenn ausgeschaltet. Ein Klick schaltet die Übersetzung um. Wird nicht mitgesendet.",
   "ottoextra_translateutils.opt.showOriginal": "Original als OOC-Nachricht senden",
   "ottoextra_translateutils.opt.showOriginal.tip": "Sendet das Original direkt nach der Übersetzung als eigene ((...))-Nachricht — nur so erkennt und färbt der Server es als OOC.",
   "ottoextra_translateutils.opt.feedback": "Statusmeldung beim Umschalten",

@@ -40,7 +40,7 @@ public final class TranslateUtilsClient implements ClientModInitializer {
         TranslateUtils.LOGGER.info("{} bereit (Addon fuer OttoExtra).", TranslateUtils.MOD_NAME);
     }
 
-    private void toggle(MinecraftClient client) {
+    public static void toggle(MinecraftClient client) {
         TranslateUtilsConfig config = TranslateUtilsConfig.active();
         config.enabled = !config.enabled;
         config.save();

@@ -8,7 +8,7 @@
   "ottoextra_translateutils.opt.sourceLanguage": "Input language",
   "ottoextra_translateutils.opt.targetLanguage": "Target language",
   "ottoextra_translateutils.opt.showLanguageTag": "Show language tag at chat input",
-  "ottoextra_translateutils.opt.showLanguageTag.tip": "Shows e.g. [DE>SV] at the right of the chat input line — green on RP channels, gray where translation does not apply. Never sent with the message.",
+  "ottoextra_translateutils.opt.showLanguageTag.tip": "Shows e.g. [DE>SV] at the right of the chat input line — green when active, gray on OOC channels and red when disabled. Click it to toggle translation. Never sent with the message.",
   "ottoextra_translateutils.opt.showOriginal": "Send original as OOC message",
   "ottoextra_translateutils.opt.showOriginal.tip": "Sends the original right after the translation as its own ((...)) message — the server only detects and colors OOC for whole messages.",
   "ottoextra_translateutils.opt.feedback": "Status message on toggle",
