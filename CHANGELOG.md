@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2] – 2026-07-15
+
+### Geändert
+
+- Die Übersetzungs-API wurde von `translate.skyfuller.de` auf `translate.ottoextra.dev` umgestellt.
+- Bereits gespeicherte Konfigurationen mit der alten Übersetzungs-Domain werden automatisch migriert.
+
 ## [0.1.1] – 2026-07-15
 
 ### Hinzugefügt

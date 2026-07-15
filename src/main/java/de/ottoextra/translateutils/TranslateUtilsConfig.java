@@ -18,6 +18,7 @@ import java.util.List;
 public final class TranslateUtilsConfig {
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+    private static final String DEFAULT_API_URL = "https://translate.ottoextra.dev/translate";
 
     /** Unterstützte Sprachkürzel (LibreTranslate-kompatibel, klein). */
     public static final List<String> LANGUAGES = List.of("de", "en", "da", "sv", "pl", "fr", "es");
@@ -32,7 +33,7 @@ public final class TranslateUtilsConfig {
     public boolean protectUrls = true;
     public boolean protectBracketTags = true;
     public boolean feedbackMessages = true;
-    public String apiUrl = "https://translate.skyfuller.de/translate";
+    public String apiUrl = DEFAULT_API_URL;
     public String apiKey = "";
     public int maxCharacters = 1000;
     public int timeoutMillis = 5000;
@@ -79,7 +80,11 @@ public final class TranslateUtilsConfig {
         maxCharacters = Math.max(50, Math.min(5000, maxCharacters));
         timeoutMillis = Math.max(1000, Math.min(30000, timeoutMillis));
         if (apiUrl == null || apiUrl.isBlank()) {
-            apiUrl = "https://translate.skyfuller.de/translate";
+            apiUrl = DEFAULT_API_URL;
+        } else if (apiUrl.startsWith("https://translate.skyfuller.de")) {
+            apiUrl = "https://translate.ottoextra.dev" + apiUrl.substring("https://translate.skyfuller.de".length());
+        } else if (apiUrl.startsWith("http://translate.skyfuller.de")) {
+            apiUrl = "https://translate.ottoextra.dev" + apiUrl.substring("http://translate.skyfuller.de".length());
         }
         if (apiKey == null) {
             apiKey = "";
